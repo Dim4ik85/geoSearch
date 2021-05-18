@@ -4,20 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Cards</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-    <!-- <link rel="stylesheet" href="styles.css"> -->
-
+    <title>Document</title>
+    
 </head>
 <body>
+    <!-- <p class="imglist">
+    <a href="https://source.unsplash.com/IvfoDk30JnI/1500x1000" data-fancybox data-caption="&lt;b&gt;Single photo&lt;/b&gt;&lt;br /&gt;Caption can contain &lt;em&gt;any&lt;/em&gt; HTML elements">
+        <img src="https://source.unsplash.com/IvfoDk30JnI/240x160" />
+    </a>
+    </p> -->
     
-    <button onclick="getGeoLocation()">Find My Location</button>
- 
-    <br><br>
-    <div style="display:none;">
-        <a href="#">Click Here</a>
-    </div>
- 
-    <script src="script.js"></script>
+    <ul class="list">
+                 Google maps
+            <ul>
+                <li><a class="fancybox-media" href="http://maps.google.com/maps?q=Eiffel+Tower,+Avenue+Gustave+Eiffel,+Paris,+France&t=h&z=17">Search results</a></li>
+                <li><a class="fancybox-media" href="http://maps.google.com/?ll=48.85796,2.295231&spn=0.003833,0.010568&t=h&z=17">Direct link</a></li>
+                <li><a class="fancybox-media" href="http://maps.google.com/?ll=48.859463,2.292626&spn=0.000965,0.002642&t=m&z=19&layer=c&cbll=48.859524,2.292532&panoid=YJ0lq28OOy3VT2IqIuVY0g&cbp=12,151.58,,0,-15.56">Street view</a></li>
+            </ul>
+        </li>
+    </ul>
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <link  href="/path/to/jquery.fancybox.min.css" rel="stylesheet">
+    <script src="/path/to/jquery.fancybox.min.js"></script>
+
+         $(document).ready(function() {
+	$('.fancybox-media').fancybox({
+		openEffect  : 'none',
+		closeEffect : 'none',
+		helpers : {
+			media : {}
+		}
+	});
+});
 </body>
 </html>
